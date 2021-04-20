@@ -1,0 +1,11 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: cloud-order-service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
