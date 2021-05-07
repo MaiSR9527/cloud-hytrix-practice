@@ -5,8 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.msr.better</groupId>
-    <artifactId>cloud-hytrix-practice</artifactId>
+    <artifactId>cloud-hystrix-practice</artifactId>
+    <packaging>pom</packaging>
     <version>1.0</version>
+    <modules>
+        <module>cloud-eureka-server</module>
+        <module>cloud-order-service</module>
+        <module>cloud-goods-service</module>
+        <module>cloud-hystrix-dashboard</module>
+        <module>cloud-turbine</module>
+        <module>cloud-hystrix-exception-service</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

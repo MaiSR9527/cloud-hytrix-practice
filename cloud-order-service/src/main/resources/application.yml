@@ -1,0 +1,39 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: cloud-order-service
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+feign:
+  hystrix:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 20000
+        readTimeout: 20000
+ribbon:
+  connectTimeout: 20000
+  readTimeout: 20000
+hystrix:
+  shareSecurityContext: true
+  command:
+    default:
+      circuitBreaker:
+        sleepWindowinMilliseconds: 100000
+        forceClosed: true
+      execution:
+        isolation:
+          thread:
+            timeoutinMilliseconds: 600000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
