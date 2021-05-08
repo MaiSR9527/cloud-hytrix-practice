@@ -42,10 +42,11 @@ public class OrderController {
     @GetMapping("test")
     public String orderTest() {
         double random = Math.random();
-        if (random < 0.5) {
-            throw new RuntimeException();
-        } else {
-            return "order test success";
-        }
+//        if (random < 0.5) {
+//            throw new RuntimeException();
+//        } else {
+//            return "order test success";
+//        }
+        return String.valueOf(random);
     }
 }

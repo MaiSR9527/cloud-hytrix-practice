@@ -15,6 +15,7 @@
         <module>cloud-hystrix-dashboard</module>
         <module>cloud-turbine</module>
         <module>cloud-hystrix-exception-service</module>
+        <module>cloud-hystrix-cache</module>
     </modules>
 
     <parent>
