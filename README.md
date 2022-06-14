@@ -1,5 +1,5 @@
 # Spring Cloud Hystrix入门和实战
-文章首发:[Spring Cloud Hystrix入门和实战](https://www.maishuren.top/archives/springcloudhystrix%E5%85%A5%E9%97%A8%E5%92%8C%E5%AE%9E%E6%88%98)
+文章首发:[Spring Cloud Hystrix入门和实战](https://www.maishuren.top/archives/springcloudhystrix-ru-men-he-shi-zhan)
 # 1.概述
 
 Hystrix是Netflix开源的一个针对分布式系统容错处理的组件，Netflix公司的项目里大量用到了Hystrix，Hystrix单词意为：“豪猪”，浑身有刺来保护自己。
